@@ -1,0 +1,78 @@
+/* Estilos da página index.html*/
+.center {
+    text-align: center;
+    font-size: 26px;
+}
+.justify {
+    text-align: justify;
+}
+.copy {
+    text-align: center;
+    font-size: 16px;
+}
+.titulo {
+    font-size: 55px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.subtitulo {
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+#menu li {
+    display: inline;
+    padding: 10px;
+}
+#menu li a {
+    text-decoration: none;
+    color: black;
+}
+#menu li a:hover {
+    color: gray;
+}
+.p-30 {
+    padding: 35px;
+}
+
+.peixe:hover{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.peixe:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+.tm-lrs {
+    width: 45px;
+    height: 45px;
+    padding: 15px;
+}
+.mb-50 {
+    margin-bottom: 60px;
+}
+
+ body{
+     background-image:url(bg5.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+}
+
+/* Estilos da página contato.html*/
+
+.ml-50 {
+    margin-left: 60px;
+}
+
