@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <ul class="menu">
+        <img class="logoinicial" src="assets/img/planetas.png">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <h1 class="titulo">Entre em contato conosco</h1>
+
+    <div class="container mb-50">
+
+        <div>
+            <h2>Mande sua sugestão:</h2>
+            <form>
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" class="transparencia" onkeyup='validaNome()'>
+                <div id='txtNome'></div>
+                
+                <label for="email">E-mail:</label> <br>  
+                <input type="email" id="email" class="transparencia" onkeyup='validaEmail()'>
+                <div id='txtEmail'></div>
+
+                <label for="assunto">Assunto:</label> <br>     
+                <textarea class="transparencia" name="assunto" id="assunto" cols="60" rows="8" onkeyup='validaAssunto()'></textarea>
+                <div id='txtAssunto'></div> <br>
+                
+                <button class="botaoenvia" onclick='enviar()'>Enviar</button>
+                
+            </form>
+
+        </div>
+
+    <div class="ml-50">
+        <h2>Endereço:</h2>
+        <p>Endereço do maior clube do mundo</p>
+        <iframe 
+        onmousemove='mapazoom()'
+        onmouseout='mapanormal()'
+        id="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14630.573915209152!2d-46.4742676!3d-23.5453221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2b061ffbcd2ecf8!2sNeo%20Qu%C3%ADmica%20Arena!5e0!3m2!1spt-BR!2sbr!4v1612903443114!5m2!1spt-BR!2sbr" 
+        width="600" 
+        height="450" 
+        frameborder="0" 
+        style="border:0;" 
+        allowfullscreen="" 
+        aria-hidden="false" 
+        tabindex="0">
+        </iframe>
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.linkedin.com/in/davi-vieira-4a8280161/" target="_blank">
+                 <img class="tm-lrs" src="assets/img/linkedin.png" alt="Logo do linkedin">
+            </a>
+ 
+            <a href="https://github.com/DaviVieira2210" target="_blank">
+             <img class="tm-lrs" src="assets/img/github.png" alt="Logo do github">
+            </a>
+        </div>
+         <p class="copy">
+             Todos os direitos reservados: Davi Vieira &copy;
+         </p>      
+     </footer>    
+
+     <script src="assets/js/script.js"></script>
+
+</body>
+</html>
