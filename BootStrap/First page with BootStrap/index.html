@@ -4,16 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnPlnaet - O melhor site de notícias espaciais!</title>
+    <title>OnPlanet - O melhor site de notícias espaciais!</title>
 
     <!--Link CSS BootStrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Link para fonte do site-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <style>
+      .tm-lrs {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+    <style>
+      .background {
+        background-image: url("assets/img/backgroung.png");
+      }
+      .fonte {
+        font-family: 'Big Shoulders Display', cursive;
+      }
+      .t-fonte {
+        font-size: 25px;
+      }
+      .t-st-fonte {
+        font-size: 23px;
+      }
+      .t-fonte-card {
+        font-size: 19px;
+      }
+      .t-fonte-OnPlanet {
+        font-size: 42px;
+      }
+      .t-font-titulo-menu {
+        font-size: 25px;
+      }
+      .t-fonte-imagem {
+        font-size: 62px;
+      }
+      .justify {
+        text-align: justify;
+      }
+     
+      .imagem{
+        transition: all 0.9s;
+        cursor: pointer;
+      }
+
+      .imagem:hover{
+        -webkit-transform: scale(1.04);
+        transform: scale(1.04);
+      }
+      .logo{
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+      .logo:hover {
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+      }
+
+    </style>
 
 </head>
-<body>
+<body class="background fonte">
     <!--Menu-->
-    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand h1 mb-0" href="#">OnPlnaet
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand h1 mb-0 t-fonte-OnPlanet" href="#">OnPlnaet
             <img class="mr-sm-3" src="assets/img/marte.png" width="30" height="30"> 
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -23,50 +82,297 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+              <a class="nav-link t-font-titulo-menu" href="#">Home <span class="sr-only">(página atual)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link t-font-titulo-menu" href="#Contato">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Desativado</a>
+              <a class="nav-link t-font-titulo-menu" href="#CURIOSIDADES">Curiosidades</a>
             </li>
             <!--Opções-->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social</a>
+                <a class="nav-link dropdown-toggle t-font-titulo-menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Linkedin</a>
-                  <a class="dropdown-item" href="#">GitHub</a>
+                  <a class="dropdown-item t-font-titulo-menu" href="https://www.linkedin.com/in/davi-vieira-4a8280161/">Linkedin</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Algo mais aqui</a>
+                  <a class="dropdown-item t-font-titulo-menu" href="https://github.com/DaviVieira2210">GitHub</a>
                 </div>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-3" type="search" placeholder="Buscar..." aria-label="Buscar...">
-            <button class="btn btn-outline-danger my-2 my-sm-0 mr-sm-5" type="submit">Pesquisar</button>
+            <input class="form-control mr-sm-3 t-font-titulo-menu" type="search" placeholder="Buscar..." aria-label="Buscar...">
+            <button class="btn btn-outline-danger my-2 my-sm-0 mr-sm-5 t-font-titulo-menu" type="submit">Pesquisar</button>
           </form>
         </div>
       </nav>
       <!--/Menu-->
 
-      <!--Grid-->
-      <div class="container">
+      <!--Carrosel-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>   
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/img/fotomarte.png" alt="Primeiro Slide" height= 900px>
+            <div class="carousel-caption">
+              <h5 class="t-fonte-imagem">Ida do homem à marte está proxima!</h5>
+              <p class="t-fonte-card">Por Davi Vieira | 12 Fevereiro 2021 às 16h30 </p>
+            </div>
+          </div>
 
-        <div class="row">
-           <div class="col-md-12">
-            <div class="bg-danger">12 Colunas</div>
-           </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/marte_2.png" alt="Segundo Slide" height= 900px>
+          </div>
+          <div class="carousel-caption">
+            <h5 class="t-fonte-imagem">Ida do homem à marte está proxima!</h5>
+            <p class="t-fonte-card">Por Davi Vieira | 12 Fevereiro 2021 às 16h30 </p>
+          </div>
+
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+      <!--/Carrosel-->
+
+      <!--JumboTroon-->
+      <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container">
+          <h1 class="display-4 text-light t-fonte-OnPlanet">O que falta para o homem ir à Marte?</h1>
+          <p class="lead text-light">Se depender da Nasa e de sua dedicação, daqui a 20 anos já teremos os primeiros seres humanos a pisar no solo do planeta vizinho.</p>
+        </div>
+      </div>
+      <!--/JumboTroon-->
+
+
+      <!--Texto e imagem-->
+      <div class="container col-md-4 fonte" >
+        <h1>O que falta para a humanidade pisar no planeta vermelho?</h1><br>
+        <p class="t-fonte justify">
+          Logo depois que Neil Armstrong pisou na Lua, em 1969, começaram as especulações sobre qual seria o próximo "pequeno passo para o homem e grande salto para a humanidade".
+          Marte, um dos planetas mais próximos da Terra, surgiu como a óbvia opção para uma viagem tripulada, mas o custo alto e as dificuldades técnicas impediram a continuidade
+          da missão no século 20. Embora o planejamento para uma viagem a Marte tenha evoluído muito, continua sendo um sonho que está a 55 milhões de quilômetros de distância.
+          Mas o que falta para a humanidade pisar no planeta vermelho pela primeira vez?
+        </p>
+        <img class="imagem" src="assets/img/homememmarte.jpg" alt="Imagem de homem em marte" width="800px" height="400px">
+        <div>
+          <p>
+            imagem ilustrtiva: Homem em marte
+          </p>
+        </div><br>
+
+        <p class="t-fonte justify">
+          Há, de fato, projetos sólidos para chegarmos lá. Elon Musk, a mente por trás da SpaceX, 
+          é quem tem os planos mais arrojados para visitar (e colonizar) Marte: a ideia é pisar no planeta vizinho em 2024, usando naves como a Starship.
+          A Nasa tem um cronograma um pouco mais folgado para isso: chegar lá em 2034. Ivan Gontijo, brasileiro que faz parte da agência, já afirmou que "os problemas técnicos são gigantescos".... 
+        </p>
+        <h1>
+          Por enquanto, só robôs
+        </h1><br>
+        <p class="t-fonte justify">
+          Enquanto filmes como "Perdido em Marte" nos ajudam a sonhar com os primeiros passos em território marciano, 
+          as missões mais concretas são as não-tripuladas. No ano que vem, quatro missões têm previsão de sair da Terra para estudos em nosso vizinho. 
+          São elas: China Mars Probe (da agência espacial chinesa), Mars 2020 (da Nasa, que deve levar um helicóptero a Marte), Hope Mars Mission (dos Emirados Árabes Unidos) e Exomars 
+          (parceria entre a União Europeia e a Rússia). O fato é que, seja para agências governamentais ou para empresas privadas, ainda há grandes desafios para nós, humanos, chegarmos ao astro sãos e salvos.
+           Confira abaixo os seis principais motivos... 
+        </p><br><br><hr><br><br>
+      </div>
+
+
+
+      <!--/Texto e imagem-->
+
+
+
+      <!--Coluna de Cards-->
+      <div class="container">
+        <div class="card-columns">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/vialactea.jpg" alt="Imagem da vialactea">
+            <div class="card-body">
+              <h5 class="card-title t-st-fonte">Estudo indica potencial de vida em outros planetas da Via Láctea</h5>
+              <p class="card-text t-fonte-card">permitiram o surgimento e a manutenção da vida na Terra é o fato de o planeta ser geologicamente ativo, com terremotos e vulcões..</p>
+            </div>
+          </div>
+          <div class="card p-3">
+            <blockquote class="blockquote mb-0 card-body">
+              <p class="t-fonte-card">A abundância inicial de tório nas gêmeas solares foi comparada com as de ferro, 
+                silício – um indicador da espessura e massa do manto convectivo em planetas rochosos
+                 – e mais dois elementos pesados: o neodímio e o európio. .</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                  <cite title="Título da fonte">inovacaotecnilogica</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="assets/img/novasonda.png" alt="Imagem de sonda enviada pela nasa">
+            <div class="card-body">
+              <h5 class="card-title t-st-fonte">Nasa lança nova sonda à marte</h5>
+              <p class="card-text t-fonte-card">Esta é a nona missão da Nasa à superfície de Marte. A chegada está prevista para fevereiro..</p>
+              <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            </div>
+          </div>
+          <div class="card bg-light text-dark text-center p-3">
+            <blockquote class="blockquote mb-0">
+              <p class="t-fonte-card">O Perseverance, sonda marciana de última geração da Nasa, a agência espacial dos Estados Unidos, 
+                  foi lançada do Cabo Canaveral, na Flórida, em um foguete Atlas 5, nesta quinta-feira (30), 
+                  em uma missão de US$ 2,4 bilhões para procurar vestígios de uma possível vida passada no planeta vizinho da Terra..</p>
+              <footer class="blockquote-footer">
+                <small>
+                  <cite title="Título da fonte">agenciabrasil</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title t-st-fonte">Primeira foto de buraco negro agora é filme</h5>
+              <p class="card-text t-fonte-card">Em uma compilação das diversas fotos, feita pela revista Nature, o "filme" mostra uma bolha de luz assimétrica girando em torno do Powehi, 
+                o buraco negro supermassivo no centro da galáxia M87.
+                É claro que nem tudo são imagens: além dos dados do Telescópio Horizonte de Eventos, a equipe usou modelos matemáticos para mostrar como o entorno do buraco negro evolui ao longo do tempo..</p>
+              <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="assets/img/buraconegro.png" alt="Primeira imagem do buraco negro">
+          </div>
+  
+          <div class="card p-3 text-right">
+            <blockquote class="blockquote mb-0">
+              <p class="t-fonte-card">A aparência dos arredores do buraco negro muda ao longo do tempo à medida que sua gravidade agita o material ao redor, criando um turbilhão que muda constantemente..</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                 <cite title="Título da fonte">inovatecnologia</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+
+
+      <!--/Coluna de Cards-->
+
+      <hr>
+      <!--Texto e video-->
+
+      <div id="CURIOSIDADES">
 
       </div>
 
-      <!--/Grid-->
+
+
+      <div class="row mt-5 mb-5 mr-sm-9">
+
+        <div class="col-md-6 t-fonte">
+          <h3>CURIOSIDADES</h3>
+          <p>
+            1. NÃO EXISTE SOM NO ESPAÇO: 
+            No espaço não existe ar, ou seja, é um grande vácuo. Como o som são ondas que se espalham pelo ar, ele não têm como se locomover entre as estrelas e planetas. 
+            Sabe aquelas explosões espaciais nos filmes? Estão cientificamente corretas aquelas que não têm som nenhum.
+          </p>
+          <p>
+            2. PLANETAS QUE É IMPOSSIVEL PISAR: Júpiter, Saturno, Urano e Netuno. Esses quatro planetas são gasosos, ou seja, não possuem uma superfície sólida. 
+            Dessa maneira, nossos astronautas precisariam desenvolver formas diferentes de explorar esses mundos.
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <iframe width="560" height="390" src="https://www.youtube.com/embed/uxaBcxrpEew" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!--/Texto e video-->
+
+      <!--Formulario-->
+      <div id="Contato">
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="text-center">
+            Entre em contato conosco:
+          </h1>
+        </div>
+      </div>
+
+      <div class="row t-fonte">
+        <div class="col-md-12">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Endereço de email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Nome completo</label>
+              <input class="form-control" id="exampleFormControlInput1" placeholder="João da Silva">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Fale conosco</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Assunto"></textarea>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-outline-danger t-font-titulo-menu col-md-5">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+   
+
       
+      <!--Formulario-->
+
+
+      
+    <!--Direitos reservados-->
+    <hr>
+    <footer>
+
+      <div class="row mb-2">
+        <div class="col-md-12 d-flex justify-content-center">
+       
+            <a href="https://www.linkedin.com/in/davi-vieira-4a8280161/" target="_blank" class="p-3">
+                 <img class="tm-lrs logo" src="assets/img/linkedin.png" alt="Logo do linkedin">
+            </a>
+ 
+            <a href="https://github.com/DaviVieira2210" target="_blank" class="p-3">
+             <img class="tm-lrs logo" src="assets/img/github.png" alt="Logo do github">
+            </a>
+    
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">   
+           <p class="text-center">
+               Todos os direitos reservados: Davi Vieira &copy;
+           </p>
+        </div>
+      </div>
+      
+    </footer>
+   <!--/Direitos reservados-->
+    </div>
+
 
     <!--Scripts JS BootStrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--/Scripts JS BootStrap-->
+
 </body>
 </html>
